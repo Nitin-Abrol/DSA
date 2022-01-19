@@ -5,9 +5,14 @@ class Graph:
         self.vertices = vertices
         self.graph = defaultdict(list)      
             
+    #This example is for undirected graph.
+    #Remove the 2nd if condition in case of Directed graph.
     
     def addEdge(self, src, dest):
-        self.graph[src].append(dest)
+        if dest not in self.graph[src]:             
+            self.graph[src].append(dest)
+        if src not in self.graph[dest]: 
+            self.graph[dest].append(src)
         
     
     def edges(self):
