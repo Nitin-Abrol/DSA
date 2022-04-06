@@ -17,3 +17,7 @@ for ind1 in range(1,len(s1)+1):
             dp2[ind1][ind2] =  max(dp2[ind1-1][ind2],dp2[ind1][ind2-1]) 
 
 print(dp2[6][6])
+
+
+# Output
+# 4
