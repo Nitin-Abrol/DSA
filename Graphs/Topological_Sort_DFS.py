@@ -1,3 +1,5 @@
+# Uses STACK
+
 from collections import defaultdict
 
 class Graph_directed:
